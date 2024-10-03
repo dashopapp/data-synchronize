@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use Dashopapp\DataSynchronize\Http\Controllers\ImportController;
+use Dashopapp\DataSynchronize\Importer\Importer;
+use {{ importerNamespace }};
+
+class {{ class }} extends ImportController
+{
+    protected function getImporter(): Importer
+    {
+        return {{ importer }}::make();
+    }
+}
